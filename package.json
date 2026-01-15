@@ -4,9 +4,10 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./Backend/app.js",
+    "build": "npm install && npm install --prefix my-project --include=dev && npm run build --prefix my-project",
+    "start":"node Backend/app.js"
   },
   "keywords": [],
   "author": "",
